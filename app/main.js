@@ -1,5 +1,4 @@
 
-
 const teste =[]
 let livros = [];
 const endpointDaAPI = 'https://guilhermeonrails.github.io/casadocodigo/livros.json';
@@ -19,38 +18,23 @@ async function getBuscarLivrosDaAPI() {
 
 
 
- function exibirOsLivrosNaTela(listaDeLivros){
+ function exibirOsLivrosNaTela(jonatas){
     
-    listaDeLivros.forEach(livro => {
+    jonatas.forEach(aylana => {
         elementoParaInserirLivros.innerHTML += `
         <div class="livro">
-        <img class="livro__imagens" src="${livro.imagem}" alt="Capa do livro Cangaceiro JavaScript" />
+        <img class="livro__imagens" src="${aylana.imagem}" alt="${aylana.alt}" />
         <h2 class="livro__titulo">
-          Cangaceiro JavaScript:
-          Uma aventura no sertão da programação
+          ${aylana.titulo}
         </h2>
-        <p class="livro__descricao">Flávio Almeida</p>
-        <p class="livro__preco" id="preco">R$29,90</p>
+        <p class="livro__descricao"> ${aylana.autor}</p>
+        <p class="livro__preco" id="preco">R$${aylana.preco}</p>
         <div class="tags">
-          <span class="tag">Front-end</span>
+          <span class="tag">${aylana.categoria}</span>
         </div>
       </div>
         `
     })
 
- }
-
-
- let a = document.getElementById('num1');
- let b = document.getElementById('num2');
- let somar = document.getElementById('somar')
- let c = document.getElementById('res')
-
-somar.addEventListener ('click', somarNum(6,8))
-
- function somarNum(num1,num2) {
-    
-     resultado = num1+ num2
-    console.log(resultado) 
  }
 
