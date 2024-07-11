@@ -37,3 +37,40 @@ async function getBuscarLivrosDaAPI() {
 
  }
 
+
+ var numeroInicial = 1;
+ var numeroFinal = 10;
+
+function contagem() {
+    console.log('o numero final eh '+numeroFinal)
+
+   for (numeroInicial=1; numeroInicial <= numeroFinal; numeroInicial+=2){
+
+    console.log(numeroInicial)
+
+   }
+}
+
+
+contagem()
+
+arr =[];
+
+var btnCalcularTabuada = document.getElementById('calcularTabuada');
+btnCalcularTabuada.addEventListener('click', mostrarTabuada)
+var numeroDigitado = document.getElementById('numeroDigitado')
+
+function mostrarTabuada(){
+
+    console.log(numeroDigitado.value);
+
+
+    for (i=0; i<10; i++) {
+
+
+        
+    }
+
+
+}
+
