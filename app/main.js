@@ -11,12 +11,11 @@ async function getBuscarLivrosDaAPI() {
 
     const res = await fetch(endpointDaAPI);
     livros = await res.json();
+    let livrosComDesconto = aplicarDesconto(livros);
     console.table(livros);
     exibirOsLivrosNaTela(livros);
 
 }
-
-
 
  function exibirOsLivrosNaTela(jonatas){
     
