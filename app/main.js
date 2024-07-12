@@ -54,7 +54,7 @@ function contagem() {
 
 contagem()
 
-arr =[];
+
 
 var btnCalcularTabuada = document.getElementById('calcularTabuada');
 btnCalcularTabuada.addEventListener('click', mostrarTabuada)
@@ -62,15 +62,22 @@ var numeroDigitado = document.getElementById('numeroDigitado')
 
 function mostrarTabuada(){
 
-    console.log(numeroDigitado.value);
+    var numerotabuada = numeroDigitado.value;
+    
 
-
+    
     for (i=0; i<10; i++) {
 
+        numerotabuada * i
 
+        var resultado = numerotabuada * i
+
+        console.log('o '+ numerotabuada +' vezes '+ 'o numero '+ i + ' é:')
+        console.log(resultado)
         
+
     }
 
-
+    
 }
 
