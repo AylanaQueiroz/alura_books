@@ -81,3 +81,24 @@ function mostrarTabuada(){
     
 }
 
+var numeroDig = document.getElementById('num_array');
+var btnArray = document.getElementById('btnArray');
+var lista = document.getElementById('li_array');
+var arr =[0,1,2,5,6]
+btnArray.addEventListener('click', listaDeNumeros)
+
+function listaDeNumeros(){
+   
+    var numeroDigitadoArray = numeroDig.value
+ 
+
+    
+for (i=0; i<arr.length; i++) {
+    lista.innerHTML = numeroDigitadoArray
+    arr = numeroDigitadoArray
+    console.log('o array é: '+arr)
+    console.log(arr.length)
+}
+    
+
+}
