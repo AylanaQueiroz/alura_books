@@ -84,21 +84,39 @@ function mostrarTabuada(){
 var numeroDig = document.getElementById('num_array');
 var btnArray = document.getElementById('btnArray');
 var lista = document.getElementById('li_array');
-var arr =[0,1,2,5,6]
+let arr =[];
 btnArray.addEventListener('click', listaDeNumeros)
 
 function listaDeNumeros(){
    
     var numeroDigitadoArray = numeroDig.value
  
+console.log('o tamanho do array é: '+arr.length)
+    
+for (i=0; i<10; i++) {
+   // lista.innerHTML = numeroDigitadoArray
+    arr = numeroDigitadoArray;
+    console.log(arr)
+
+    numeroDigitadoArray.push('teste')
+
+
+   
+  
+   
+    
+   
+
+
+
 
     
-for (i=0; i<arr.length; i++) {
-    lista.innerHTML = numeroDigitadoArray
-    arr = numeroDigitadoArray
-    console.log('o array é: '+arr)
-    console.log(arr.length)
+
+   
 }
     
 
+
 }
+
+
