@@ -1,5 +1,5 @@
 
-const teste =[]
+const teste = []
 let livros = [];
 const endpointDaAPI = 'https://guilhermeonrails.github.io/casadocodigo/livros.json';
 
@@ -9,18 +9,18 @@ const elementoParaInserirLivros = document.getElementById('livros');
 
 async function getBuscarLivrosDaAPI() {
 
-    const res = await fetch(endpointDaAPI);
-    livros = await res.json();
-    let livrosComDesconto = aplicarDesconto(livros);
-    console.table(livros);
-    exibirOsLivrosNaTela(livros);
+  const res = await fetch(endpointDaAPI);
+  livros = await res.json();
+  let livrosComDesconto = aplicarDesconto(livros);
+  console.table(livros);
+  exibirOsLivrosNaTela(livros);
 
 }
 
- function exibirOsLivrosNaTela(jonatas){
-    
-    jonatas.forEach(aylana => {
-        elementoParaInserirLivros.innerHTML += `
+function exibirOsLivrosNaTela(jonatas) {
+
+  jonatas.forEach(aylana => {
+    elementoParaInserirLivros.innerHTML += `
         <div class="livro">
         <img class="livro__imagens" src="${aylana.imagem}" alt="${aylana.alt}" />
         <h2 class="livro__titulo">
@@ -33,22 +33,22 @@ async function getBuscarLivrosDaAPI() {
         </div>
       </div>
         `
-    })
+  })
 
- }
+}
 
 
- var numeroInicial = 1;
- var numeroFinal = 10;
+var numeroInicial = 1;
+var numeroFinal = 10;
 
 function contagem() {
-    console.log('o numero final eh '+numeroFinal)
+  console.log('o numero final eh ' + numeroFinal)
 
-   for (numeroInicial=1; numeroInicial <= numeroFinal; numeroInicial+=2){
+  for (numeroInicial = 1; numeroInicial <= numeroFinal; numeroInicial += 2) {
 
     console.log(numeroInicial)
 
-   }
+  }
 }
 
 
@@ -60,58 +60,62 @@ var btnCalcularTabuada = document.getElementById('calcularTabuada');
 btnCalcularTabuada.addEventListener('click', mostrarTabuada)
 var numeroDigitado = document.getElementById('numeroDigitado')
 
-function mostrarTabuada(){
+function mostrarTabuada() {
 
-    var numerotabuada = numeroDigitado.value;
-    
+  var numerotabuada = numeroDigitado.value;
 
-    
-    for (i=0; i<10; i++) {
 
-        numerotabuada * i
 
-        var resultado = numerotabuada * i
+  for (i = 0; i < 10; i++) {
 
-        console.log('o '+ numerotabuada +' vezes '+ 'o numero '+ i + ' é:')
-        console.log(resultado)
-        
+    numerotabuada * i
 
-    }
+    var resultado = numerotabuada * i
 
-    
+    console.log('o ' + numerotabuada + ' vezes ' + 'o numero ' + i + ' é:')
+    console.log(resultado)
+
+
+  }
+
+
 }
 
 var numeroDig = document.getElementById('num_array');
 var btnArray = document.getElementById('btnArray');
 var lista = document.getElementById('li_array');
-let arr =[];
+let arr = [];
 btnArray.addEventListener('click', listaDeNumeros)
 
-function listaDeNumeros(){
-   
-    var numeroDigitadoArray = numeroDig.value;
-    arr.push(numeroDigitadoArray)
- 
-console.log('o tamanho do array é: '+arr.length)
-    
+function listaDeNumeros() {
 
-   
-    lista.innerHTML = arr 
-  
-    
-    console.log('estamos aqui numerodigitadoArray '+numeroDigitadoArray)
-    console.log('o array é arr: '+ arr)
-    console.log('o tamanho do array é: '+arr.length)
-    
+  var numeroDigitadoArray = numeroDig.value;
+  arr.push(numeroDigitadoArray)
+
+  lista.innerHTML = arr
+  console.log('o tamanho do array é: ' + arr.length)
 
 
-    
 
-   
+  console.log('estamos aqui numerodigitadoArray ' + numeroDigitadoArray)
+  console.log('o array é arr: ' + arr)
+  console.log('o tamanho do array é: ' + arr.length)
 
-    
+  if (numeroDigitadoArray <= 0 || numeroDigitadoArray > 100) {
 
-
+    alert('O numero digitado precisa ser entre 1 e 100');
+    const index = arr.indexOf('0')
+    if (index > - 1) {
+      arr.splice(index, 1)
+    } console.log('teste do IndexOf' + arr)
+    filtered = arr.filter(value => value < 101)
+    //filtered = arr.filter(value => value >0)
+  }
+  //lista.innerHTML = arr 
+  //arr = numeroDigitadoArray
+  arr = filtered
+  lista.innerHTML = filtered
+  console.log('aqui o filtered' + filtered)
 }
 
 
