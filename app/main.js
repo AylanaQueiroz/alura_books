@@ -89,31 +89,26 @@ btnArray.addEventListener('click', listaDeNumeros)
 
 function listaDeNumeros(){
    
-    var numeroDigitadoArray = numeroDig.value
+    var numeroDigitadoArray = numeroDig.value;
+    arr.push(numeroDigitadoArray)
  
 console.log('o tamanho do array é: '+arr.length)
     
-for (i=0; i<10; i++) {
-   // lista.innerHTML = numeroDigitadoArray
-    arr = numeroDigitadoArray;
-    console.log(arr)
-
-    numeroDigitadoArray.push('teste')
-
 
    
+    lista.innerHTML = arr 
   
-   
     
-   
-
-
-
-
+    console.log('estamos aqui numerodigitadoArray '+numeroDigitadoArray)
+    console.log('o array é arr: '+ arr)
+    console.log('o tamanho do array é: '+arr.length)
     
 
+
+    
+
    
-}
+
     
 
 
