@@ -100,22 +100,39 @@ function listaDeNumeros() {
   console.log('estamos aqui numerodigitadoArray ' + numeroDigitadoArray)
   console.log('o array é arr: ' + arr)
   console.log('o tamanho do array é: ' + arr.length)
+  console.log('array na posicao 0: '+arr[0])
+
+ 
+  for (i=0; i<arr.length; i++) {
+
+    console.log('estamos no for'+i)
+
+  }
+  
 
   if (numeroDigitadoArray <= 0 || numeroDigitadoArray > 100) {
 
     alert('O numero digitado precisa ser entre 1 e 100');
+
     const index = arr.indexOf('0')
     if (index > - 1) {
       arr.splice(index, 1)
+
     } console.log('teste do IndexOf' + arr)
     filtered = arr.filter(value => value < 101)
     //filtered = arr.filter(value => value >0)
+    
   }
   //lista.innerHTML = arr 
   //arr = numeroDigitadoArray
   arr = filtered
   lista.innerHTML = filtered
   console.log('aqui o filtered' + filtered)
+
+
+  
 }
+
+
 
 
