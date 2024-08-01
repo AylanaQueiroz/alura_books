@@ -85,16 +85,24 @@ var numeroDig = document.getElementById('num_array');
 var btnArray = document.getElementById('btnArray');
 var lista = document.getElementById('li_array');
 let arr = [];
+var novoArray = [];
 btnArray.addEventListener('click', listaDeNumeros)
 
 function listaDeNumeros() {
-
+  
   var numeroDigitadoArray = numeroDig.value;
+
+  for (i=0; i<arr.length; i++) {
+    if (numeroDigitadoArray == arr[i]) {
+      filtered = arr.filter(value => value != arr[i])
+      console.log ('numeros iguais :'+' '+numeroDigitadoArray+ ' e '+ ' arr: '+arr[i])
+    }
+  }
+
   arr.push(numeroDigitadoArray)
 
   lista.innerHTML = arr
   console.log('o tamanho do array é: ' + arr.length)
-
 
 
   console.log('estamos aqui numerodigitadoArray ' + numeroDigitadoArray)
@@ -105,10 +113,13 @@ function listaDeNumeros() {
  
   for (i=0; i<arr.length; i++) {
 
-    console.log('estamos no for'+i)
-
+    console.log('numeroDigitado = '+numeroDigitadoArray)
+    console.log('arr = '+arr)
+    if (numeroDigitadoArray != arr[i]) {
+      
+    }
+    
   }
-  
 
   if (numeroDigitadoArray <= 0 || numeroDigitadoArray > 100) {
 
@@ -129,7 +140,7 @@ function listaDeNumeros() {
   lista.innerHTML = filtered
   console.log('aqui o filtered' + filtered)
 
-
+  
   
 }
 
