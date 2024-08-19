@@ -16,7 +16,7 @@
 </header>
 
 <body>
-<!--<section class="banner"></section>-->
+  <!--<section class="banner"></section>-->
   <nav class="wrap">
     <ul class="nav">
       <li><button class="btn btn-front" href="#" id="btnFiltrarLivrosFront" value="front-end">LIVROS DE
@@ -30,7 +30,7 @@
     </ul>
   </nav>
   <section class="livros wrap" id="livros">
-  <!--<div class="livro">
+    <!--<div class="livro">
       <img class="livro__imagens" src="imagens/Cangaceiro-Javascript.png" alt="Capa do livro Cangaceiro JavaScript" />
       <h2 class="livro__titulo">
         Cangaceiro JavaScript:
@@ -274,45 +274,86 @@
   <footer class="rodape">
     <p>Alura - Mergulhe em tecnologia</p>
   </footer>
-  
+
   <h1>tabuada</h1>
   <input id="numeroDigitado" type="number"> Digite um numero
   <input id="calcularTabuada" type="button" value="enviar"><br>
- <hr><br>
+  <hr><br>
 
-<h1>Digite um número entre 1 e 100:</h1>
-<input id="num_array" type="number"> 
-<input type="button" value="enviar" id="btnArray"> 
-<ul id="lista">Os numeros digitados foram: </ul>
-<li id="li_array"></li>
-<h2 id="resultado"></h2>
-<h2 id="maior_numero"></h2>
-<h2 id="menor_numero"></h2>
-<h2 id="somatoria_numeros"></h2>
-<input type="button" value="finalizar" id="finalizar">
-<input type="button" value="SOMA" id="testeSoma"> <br><hr><br>
+  <h1>Digite um número entre 1 e 100:</h1>
+  <input id="num_array" type="number">
+  <input type="button" value="enviar" id="btnArray">
+  <ul id="lista">Os numeros digitados foram: </ul>
+  <li id="li_array"></li>
+  <h2 id="resultado"></h2>
+  <h2 id="maior_numero"></h2>
+  <h2 id="menor_numero"></h2>
+  <h2 id="somatoria_numeros"></h2>
+  <input type="button" value="finalizar" id="finalizar">
+  <input type="button" value="SOMA" id="testeSoma"> <br>
+  <hr><br>
 
-<h1>Digite um número</h1>
-<input type="number" name="numeroNaTela" id="numero_posterior">
-<input id="btn_antecessor" type="button" value="enviar">
-<h1 id="numero_antecessor">O Antecessor do número digitado é: </h1><br><hr>
+  <h1>Digite um número</h1>
+  <input type="number" name="numeroNaTela" id="numero_posterior">
+  <input id="btn_antecessor" type="button" value="enviar">
+  <h1 id="numero_antecessor">O Antecessor do número digitado é: </h1><br>
+  <hr>
 
-<h1>Calcule a área do retângulo:</h1>
-<input type="number" name="altura do retângulo" id="altura_ret">altura do retângulo <br>
-<input type="number" name="largura do retângulo" id="largura_ret">largura do retângulo<br>
-<input type="button" value="Calcular" id="calcular_ret">
-<h1 id="resultado_ret">A área do retângulo é: </h1>
-</h1><br><hr>
+  <h1>Calcule a área do retângulo:</h1>
+  <input type="number" name="altura do retângulo" id="altura_ret">altura do retângulo <br>
+  <input type="number" name="largura do retângulo" id="largura_ret">largura do retângulo<br>
+  <input type="button" value="Calcular" id="calcular_ret">
+  <h1 id="resultado_ret">A área do retângulo é: </h1>
+  <br>
+  <hr>
 
-<h1>Calcule a idade de uma determinada pessoa em dias:</h1>
-<input type="number" name="" id="anos">Anos<br>
-<input type="number" name="" id="meses">Meses<br>
-<input type="number" name="" id="dias">Dias<br>
-<input type="button" value="calcular Idade" id="btn_idade">
-<h1 id="idade_final">A idade é: </h1>
+  <h1>Calcule a idade de uma determinada pessoa em dias:</h1>
+  <input type="number" name="" id="anos">Anos<br>
+  <input type="number" name="" id="meses">Meses<br>
+  <input type="number" name="" id="dias">Dias<br>
+  <input type="button" value="calcular Idade" id="btn_idade">
+  <h1 id="idade_final">A idade é: </h1>
+  <br>
+  <hr>
 
- <script src="/app/main.js"></script>
- <script scr="/app/metodomap.js"></script>
+  <h1>Calcule a porcentagem de votos brancos, votos nulos,
+    votos válidos e votos totais do município Aylandia:</h1>
+  <input type="number" id="votos_em_branco"> Votos em branco<br>
+  <input type="number" id="Votos_nulos"> Votos Nulos <br>
+  <input type="number" id="votos_validos">Votos válidos <br>
+
+  <input type="button" value="Calcular Votos" id="btn_calculo_votos">
+  <h1 id="resultado_votos">A apuração dos votos em porcentagem foi a seguinte: </h1>
+  <h1 id="votos_brancos_porcento"></h1>
+  <h1 id="votos_nulos_porcento"></h1>
+  <h1 id="votos_validos_porcento"></h1>
+  <br>
+  <hr>
+
+  <h1>Calcule o salário de determinada pessoa após sofrer reajuste:</h1>
+
+  <input type="number" name="Salário" id="salario">Qual o valor atual do seu salário?<br>
+  <input type="number" name="reajuste" id="reajuste">Quanto você receberá de reajuste salarial?<br>
+  <input type="button" value="Calcular Salario" id="calcular_salario">
+  <h1 id="resultadoSalarial">O valor final do salário será de:</h1>
+  <br>
+  <hr>
+
+ <h1>Digite um número:</h1>
+ <input type="number" name="" id="numParOuImpar">Num digitado 
+ <input type="button" value="enviar" id="btnParOuImpar">
+ <h1 id="resultadoParImpar"></h1>
+ <br>
+  <hr>
+
+  <h1>Informe qual dos dois números é o maior número:</h1>
+  <input id="n1" type="number"> Primeiro número <br>
+  <input id="n2" type="number">Segundo número <br>
+  <input id="calculo" type="button" value="Calcular">
+  <h1 id="resultadon1n2">O maior número é o: </h1>
+
+  <script src="/app/main.js"></script>
+  <script scr="/app/metodomap.js"></script>
 </body>
 
 </html>
